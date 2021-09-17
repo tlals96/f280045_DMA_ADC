@@ -1,14 +1,11 @@
-# 
-Using DMA for ADC monitoring
-Processor : TMS320F280045
-Code Composer Studio Version : 9.3.0
-Compiler version : TI v20.2.1.LTS
-Library : C2000
-
 # f280045_DMA_ADC
-> DMA를 활용한 ADC continuous 모니터링
+> Using DMA for ADC monitoring
+> Processor : TMS320F280045
+> Code Composer Studio Version : 9.3.0
+> Compiler version : TI v20.2.1.LTS
+> Library : C2000
 
-[![NPM Version][c2000-image]][c2000ware-url]
+[![C2000Ware Version][c2000ware-image]][c2000ware-url]
 [![Build Status][travis-image]][travis-url]
 
 한 두 문단으로 프로젝트 소개 글을 작성합니다.
