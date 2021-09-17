@@ -40,7 +40,7 @@ Library : C2000
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://https://github.com/tlals96/f280045_DMA_ADC">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
