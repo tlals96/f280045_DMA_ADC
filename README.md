@@ -1,45 +1,41 @@
 # f280045_DMA_ADC
 > Using DMA for ADC monitoring
-> Processor : TMS320F280045
-> Code Composer Studio Version : 9.3.0
-> Compiler version : TI v20.2.1.LTS
-> Library : C2000
 
-[![C2000Ware Version][c2000ware-image]][c2000ware-url]
 [![Build Status][travis-image]][travis-url]
 
-한 두 문단으로 프로젝트 소개 글을 작성합니다.
+EPWM2 trigger를 기준으로 ADC conversion을 시작함
 
-![](../header.png)
+ADCA, ADCC channel 12 each.
 
-## 설치 방법
+## IDE, Library Install URL
+Windows
 
-OS X & 리눅스:
+[IDE][ccs9_3-download], 
+[Library][c2000ware-url]
 
-```sh
-npm install my-crazy-module --save
-```
-
-윈도우:
-
-```sh
-edit autoexec.bat
-```
 
 ## 사용 예제
 
-스크린 샷과 코드 예제를 통해 사용 방법을 자세히 설명합니다.
+ti\ .. \c2000\C2000Ware_3_04_00_00\driverlib\f28004x\examples\adc\adc_ex6_soc_continuous_dma.c
+
+ti\ .. \c2000\C2000Ware_3_04_00_00\driverlib\f28004x\examples\adc\CCS\adc_ex6_soc_continuous_dma.projectspec를 CCS에서 Import해 사용
 
 _더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
 
 ## 개발 환경 설정
 
-모든 개발 의존성 설치 방법과 자동 테스트 슈트 실행 방법을 운영체제 별로 작성합니다.
+Windows 10 개발환경의 `CCS 9.3.0`에서 `build, compile`
 
-```sh
-make install
-npm test
-```
+![](./images/ccs_general_setting.png)
+
+Linker command file setting 방법
+
+![](./images/ccs_build_setting.png)
+
+Build command setting  방법
+
+개발 PC의 CPU thread 수 만큼 -j 뒤에 기입해주면 됨
+> ${CCS_UTILS_DIR}/bin/gmake -k -k12
 
 ## 업데이트 내역
 
@@ -56,13 +52,12 @@ npm test
 * 0.0.1
     * 작업 진행 중
 
+<!-- 
 ## 정보
 
-이름 – [@트위터 주소](https://twitter.com/dbader_org) – 이메일주소@example.com
+README Template by. sujinleeme
 
-XYZ 라이센스를 준수하며 ``LICENSE``에서 자세한 정보를 확인할 수 있습니다.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[sujinleeme](https://github.com/sujinleeme/readme-template/tree/master/korean) -->
 
 ## 기여 방법
 
@@ -73,9 +68,9 @@ XYZ 라이센스를 준수하며 ``LICENSE``에서 자세한 정보를 확인할
 5. 풀리퀘스트를 보내주세요.
 
 <!-- Markdown link & img dfn's -->
-[c2000ware-image]: https://www.ti.com/content/dam/ticom/images/icons/illustrative-icons/software/sdk-code-icon.png
 [c2000ware-url]: https://www.ti.com/tool/C2000WARE
-[ccs9_3-downloads]: https://software-dl.ti.com/ccs/esd/documents/ccs_downloadshtml#code-composer-studio-version-9-downloads
+[ccs9_3-download]: https://software-dl.ti.com/ccs/esd/documents/ccs_downloads.html#code-composer-studio-version-9-downloads
 [travis-image]: https://img.shields.io/travis/tlals96/f280045_DMA_ADC/master.svg?style=flat-square
 [travis-url]: https://app.travis-ci.com/github/tlals96/f280045_DMA_ADC
 [wiki]: https://github.com/yourname/yourproject/wiki
+[general-setting]: https://https://img.shields.io/travis/tlals96/f280045_DMA_ADC/images/ccs_general_setting.png
