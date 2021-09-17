@@ -1,0 +1,1 @@
+"./adc_ex6_soc_continuous_dma.obj" "./device/device.obj" "./device/f28004x_codestartbranch.obj" "../28004x_generic_ram_lnk.cmd" "C:/ti/c2000/C2000Ware_3_04_00_00/libraries/calibration/hrpwm/f28004x/lib/SFO_v8_fpu_lib_build_c28_driverlib.lib" "C:/ti/c2000/C2000Ware_3_04_00_00/driverlib/f28004x/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
