@@ -16,11 +16,11 @@ Windows
 
 ## 사용 예제
 
-ti\ .. \c2000\C2000Ware_3_04_00_00\driverlib\f28004x\examples\adc\adc_ex6_soc_continuous_dma.c
+Directory : ti\ .. \c2000\C2000Ware_3_04_00_00\driverlib\f28004x\examples\adc\adc_ex6_soc_continuous_dma.c
 
 ti\ .. \c2000\C2000Ware_3_04_00_00\driverlib\f28004x\examples\adc\CCS\adc_ex6_soc_continuous_dma.projectspec를 CCS에서 Import해 사용
 
-_더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
+<!-- _더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._ -->
 
 ## 개발 환경 설정
 
@@ -38,7 +38,7 @@ Processor에 맞춰 선택 (`General > Project > Tool-chain > Linker command fil
 
 Build command setting  방법
 
-개발 PC의 CPU thread 수 만큼 -j 뒤에 기입해주면 됨 `Build > Builder > Build Command`
+개발 PC CPU의 논리프로세서 개수 만큼 -j 뒤에 기입해주면 됨 `Build > Builder > Build Command`
 > ${CCS_UTILS_DIR}/bin/gmake -k `-j 12`
 
 ## 업데이트 내역
