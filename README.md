@@ -39,7 +39,7 @@ Processor에 맞춰 선택 (`General > Project > Tool-chain > Linker command fil
 Build command setting  방법
 
 개발 PC의 CPU thread 수 만큼 -j 뒤에 기입해주면 됨 `Build > Builder > Build Command`
-> ${CCS_UTILS_DIR}/bin/gmake -k -j12
+> ${CCS_UTILS_DIR}/bin/gmake -k `-j 12`
 
 ## 업데이트 내역
 
