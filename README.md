@@ -12,6 +12,7 @@ Windows :
 [IDE][ccs9_3-download], 
 [Library][c2000ware-url]
 
+Compiled in CCS V9.3.0
 
 ## 사용 예제
 
@@ -19,7 +20,7 @@ Directory : ti\ .. \c2000\C2000Ware_3_04_00_00\driverlib\f28004x\examples\adc\ad
 
 ti\ .. \c2000\C2000Ware_3_04_00_00\driverlib\f28004x\examples\adc\CCS\adc_ex6_soc_continuous_dma.projectspec를 CCS에서 Import해 사용
 
-<!-- _더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._ -->
+_더 많은 예제와 사용법은 [Resource Explorer][resource-explorer]를 참고하세요._
 
 ## 개발 환경 설정
 
@@ -65,5 +66,5 @@ README Template by. sujinleeme
 [ccs9_3-download]: https://software-dl.ti.com/ccs/esd/documents/ccs_downloads.html#code-composer-studio-version-9-downloads
 [travis-image]: https://img.shields.io/travis/tlals96/f280045_DMA_ADC/master.svg?style=flat-square
 [travis-url]: https://app.travis-ci.com/github/tlals96/f280045_DMA_ADC
-[wiki]: https://github.com/yourname/yourproject/wiki
+[resource-explorer]: https://dev.ti.com/tirex/explore/node?compilers=ccs&devices=F280045&node=AL.a.macE.c7rSiGSB7klQ__gYkahfz__LATEST
 [general-setting]: https://https://img.shields.io/travis/tlals96/f280045_DMA_ADC/images/ccs_general_setting.png
