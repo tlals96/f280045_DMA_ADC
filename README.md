@@ -8,8 +8,7 @@ EPWM2 trigger를 기준으로 ADC conversion을 시작함
 `ADCA`, `ADCC`의 각 12개의 channel을 각각 conversion
 
 ## IDE, Library Install URL
-Windows
-
+Windows : 
 [IDE][ccs9_3-download], 
 [Library][c2000ware-url]
 
