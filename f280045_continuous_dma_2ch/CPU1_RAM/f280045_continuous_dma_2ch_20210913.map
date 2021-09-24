@@ -1,7 +1,7 @@
 ******************************************************************************
              TMS320C2000 Linker PC v20.2.1                     
 ******************************************************************************
->> Linked Fri Sep 17 16:15:00 2021
+>> Linked Fri Sep 24 17:03:42 2021
 
 OUTPUT FILE NAME:   <f280045_continuous_dma_2ch_20210913.out>
 ENTRY POINT SYMBOL: "code_start"  address: 00000000
@@ -76,7 +76,7 @@ codestart
 
 .TI.ramfunc 
 *          0    000000f4    000001a4     
-                  000000f4    000001a0     adc_ex6_soc_continuous_dma.obj (.TI.ramfunc:retain)
+                  000000f4    000001a0     main.obj (.TI.ramfunc:retain)
                   00000294    00000004     driverlib_eabi.lib : sysctl.obj (.TI.ramfunc)
 
 .cinit     0    00000298    00000024     
@@ -92,7 +92,7 @@ codestart
                   00000400    00000100     --HOLE--
 
 .bss       1    0000abab    00000001     UNINITIALIZED
-                  0000abab    00000001     adc_ex6_soc_continuous_dma.obj (.bss)
+                  0000abab    00000001     main.obj (.bss)
 
 .init_array 
 *          0    000000f4    00000000     UNINITIALIZED
@@ -102,23 +102,23 @@ codestart
                   0000a8ef    00000001     --HOLE-- [fill = 0]
                   0000a8f0    000000ef                        : sysctl.obj (.const:.string)
                   0000a9df    00000001     --HOLE-- [fill = 0]
-                  0000a9e0    000000cc     adc_ex6_soc_continuous_dma.obj (.const:.string)
+                  0000a9e0    000000cc     main.obj (.const:.string)
                   0000aaac    00000076     driverlib_eabi.lib : adc.obj (.const:.string)
                   0000ab22    00000076                        : dma.obj (.const:.string)
                   0000ab98    00000013     device.obj (.const:.string)
 
 .data      1    0000abac    0000002a     UNINITIALIZED
-                  0000abac    00000010     adc_ex6_soc_continuous_dma.obj (.data:avg_adcA)
-                  0000abbc    00000010     adc_ex6_soc_continuous_dma.obj (.data:avg_adcC)
+                  0000abac    00000010     main.obj (.data:avg_adcA)
+                  0000abbc    00000010     main.obj (.data:avg_adcC)
                   0000abcc    00000006     rts2800_fpu32_eabi.lib : exit.c.obj (.data)
                   0000abd2    00000002                            : _lock.c.obj (.data:_lock)
                   0000abd4    00000002                            : _lock.c.obj (.data:_unlock)
 
 ramgs0     1    0000c000    00000800     UNINITIALIZED
-                  0000c000    00000800     adc_ex6_soc_continuous_dma.obj (ramgs0)
+                  0000c000    00000800     main.obj (ramgs0)
 
 .text.1    0    00008000    00000800     
-                  00008000    000007ef     adc_ex6_soc_continuous_dma.obj (.text)
+                  00008000    000007ef     main.obj (.text)
                   000087ef    00000010     driverlib_eabi.lib : sysctl.obj (.text:DCC_isBaseValid)
                   000087ff    00000001     rts2800_fpu32_eabi.lib : startup.c.obj (.text)
 
@@ -183,48 +183,48 @@ ramgs0     1    0000c000    00000800     UNINITIALIZED
 
 MODULE SUMMARY
 
-       Module                           code   ro data   rw data
-       ------                           ----   -------   -------
+       Module                        code   ro data   rw data
+       ------                        ----   -------   -------
     .\
-       adc_ex6_soc_continuous_dma.obj   2447   204       2081   
-    +--+--------------------------------+------+---------+---------+
-       Total:                           2447   204       2081   
-                                                                
+       main.obj                      2447   204       2081   
+    +--+-----------------------------+------+---------+---------+
+       Total:                        2447   204       2081   
+                                                             
     .\device\
-       device.obj                       426    19        0      
-       f28004x_codestartbranch.obj      10     0         0      
-    +--+--------------------------------+------+---------+---------+
-       Total:                           436    19        0      
-                                                                
+       device.obj                    426    19        0      
+       f28004x_codestartbranch.obj   10     0         0      
+    +--+-----------------------------+------+---------+---------+
+       Total:                        436    19        0      
+                                                             
     C:\ti\c2000\C2000Ware_3_04_00_00\driverlib\f28004x\driverlib\ccs\Debug\driverlib_eabi.lib
-       sysctl.obj                       1112   239       0      
-       gpio.obj                         210    239       0      
-       dma.obj                          318    118       0      
-       adc.obj                          126    118       0      
-       interrupt.obj                    189    0         0      
-    +--+--------------------------------+------+---------+---------+
-       Total:                           1955   714       0      
-                                                                
+       sysctl.obj                    1112   239       0      
+       gpio.obj                      210    239       0      
+       dma.obj                       318    118       0      
+       adc.obj                       126    118       0      
+       interrupt.obj                 189    0         0      
+    +--+-----------------------------+------+---------+---------+
+       Total:                        1955   714       0      
+                                                             
     C:\ti\lib\rts2800_fpu32_eabi.lib
-       copy_decompress_lzss.c.obj       49     0         0      
-       exit.c.obj                       41     0         6      
-       autoinit.c.obj                   43     0         0      
-       memcpy.c.obj                     29     0         0      
-       boot28.asm.obj                   23     0         0      
-       _lock.c.obj                      9      0         4      
-       args_main.c.obj                  12     0         0      
-       copy_decompress_none.c.obj       8      0         0      
-       memset.c.obj                     7      0         0      
-       copy_zero_init.c.obj             6      0         0      
-       pre_init.c.obj                   2      0         0      
-       startup.c.obj                    1      0         0      
-    +--+--------------------------------+------+---------+---------+
-       Total:                           230    0         10     
-                                                                
-       Stack:                           0      0         256    
-       Linker Generated:                0      36        0      
-    +--+--------------------------------+------+---------+---------+
-       Grand Total:                     5068   973       2347   
+       copy_decompress_lzss.c.obj    49     0         0      
+       exit.c.obj                    41     0         6      
+       autoinit.c.obj                43     0         0      
+       memcpy.c.obj                  29     0         0      
+       boot28.asm.obj                23     0         0      
+       _lock.c.obj                   9      0         4      
+       args_main.c.obj               12     0         0      
+       copy_decompress_none.c.obj    8      0         0      
+       memset.c.obj                  7      0         0      
+       copy_zero_init.c.obj          6      0         0      
+       pre_init.c.obj                2      0         0      
+       startup.c.obj                 1      0         0      
+    +--+-----------------------------+------+---------+---------+
+       Total:                        230    0         10     
+                                                             
+       Stack:                        0      0         256    
+       Linker Generated:             0      36        0      
+    +--+-----------------------------+------+---------+---------+
+       Grand Total:                  5068   973       2347   
 
 
 LINKER GENERATED COPY TABLES

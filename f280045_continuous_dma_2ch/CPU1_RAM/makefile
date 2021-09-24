@@ -10,7 +10,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"./adc_ex6_soc_continuous_dma.obj" \
+"./main.obj" \
 "./device/device.obj" \
 "./device/f28004x_codestartbranch.obj" \
 "../28004x_generic_ram_lnk.cmd" \
@@ -146,7 +146,7 @@ all: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 f280045_continuous_dma_2ch_20210913.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: C2000 Linker'
-	"C:/ti/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"f280045_continuous_dma_2ch_20210913.map" --stack_size=0x100 --warn_sections -i"C:/ti/lib" -i"C:/ti/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="f280045_continuous_dma_2ch_20210913_linkInfo.xml" --entry_point=code_start --rom_model -o "f280045_continuous_dma_2ch_20210913.out" $(ORDERED_OBJS)
+	"C:/ti/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu0 -Ooff --advice:performance=all --define=DEBUG --define=CPU1 --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"f280045_continuous_dma_2ch_20210913.map" --stack_size=0x100 --warn_sections -i"C:/ti/lib" -i"C:/ti/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="f280045_continuous_dma_2ch_20210913_linkInfo.xml" --entry_point=code_start --rom_model -o "f280045_continuous_dma_2ch_20210913.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
@@ -160,8 +160,8 @@ f280045_continuous_dma_2ch_20210913.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "adc_ex6_soc_continuous_dma.obj" "device\device.obj" "device\f28004x_codestartbranch.obj" 
-	-$(RM) "adc_ex6_soc_continuous_dma.d" "device\device.d" 
+	-$(RM) "main.obj" "device\device.obj" "device\f28004x_codestartbranch.obj" 
+	-$(RM) "main.d" "device\device.d" 
 	-$(RM) "device\f28004x_codestartbranch.d" 
 	-@echo 'Finished clean'
 	-@echo ' '

@@ -13,21 +13,21 @@ C:/ti/c2000/C2000Ware_3_04_00_00/libraries/calibration/hrpwm/f28004x/lib/SFO_v8_
 C:/ti/c2000/C2000Ware_3_04_00_00/driverlib/f28004x/driverlib/ccs/Debug/driverlib.lib 
 
 C_SRCS += \
-../adc_ex6_soc_continuous_dma.c 
+../main.c 
 
 C_DEPS += \
-./adc_ex6_soc_continuous_dma.d 
+./main.d 
 
 OBJS += \
-./adc_ex6_soc_continuous_dma.obj 
+./main.obj 
 
 OBJS__QUOTED += \
-"adc_ex6_soc_continuous_dma.obj" 
+"main.obj" 
 
 C_DEPS__QUOTED += \
-"adc_ex6_soc_continuous_dma.d" 
+"main.d" 
 
 C_SRCS__QUOTED += \
-"../adc_ex6_soc_continuous_dma.c" 
+"../main.c" 
 
 
