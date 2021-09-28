@@ -26,17 +26,15 @@ _더 많은 예제와 사용법은 [Resource Explorer][resource-explorer]를 참
 
 Windows 10 개발환경의 `CCS 9.3.0`에서 `build, compile`
 
+### Linker command file 및 Compiler version setting 방법
 ![](./images/ccs_general_setting.png)
-
-Linker command file 및 Compiler version setting 방법
 
 Processor에 맞춰 선택 (`General > Project > Tool-chain > Linker command file`)
 
 사용하는 Compiler version 선택 (`General > Project > Tool-chain > Compiler version`)
 
+### Build command setting  방법
 ![](./images/ccs_build_setting.png)
-
-Build command setting  방법
 
 개발 PC CPU의 논리프로세서 개수 만큼 -j 뒤에 기입해주면 됨 `Build > Builder > Build Command`
 > ${CCS_UTILS_DIR}/bin/gmake -k `-j 12`
