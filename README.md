@@ -12,6 +12,8 @@ Windows :
 [IDE][ccs9_3-download], 
 [Library][c2000ware-url]
 
+Compiler version : TI 20.2.1.LTS
+
 Compiled in CCS v9.3.0
 
 ## 사용 예제
