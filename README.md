@@ -26,7 +26,7 @@ _더 많은 예제와 사용법은 [Resource Explorer][resource-explorer]를 참
 
 Windows 10 개발환경의 `CCS 9.3.0`에서 `build, compile`
 
-![](./images/ccs_general_setting.png?retina)
+![](./images/ccs_general_setting.png)
 
 Linker command file 및 Compiler version setting 방법
 
@@ -34,7 +34,9 @@ Processor에 맞춰 선택 (`General > Project > Tool-chain > Linker command fil
 
 사용하는 Compiler version 선택 (`General > Project > Tool-chain > Compiler version`)
 
-![](./images/ccs_build_setting.png?retina)
+![](./images/ccs_build_setting.png)
+<img src = "./images/ccs_build_setting.png" width="400px">
+
 
 Build command setting  방법
 
