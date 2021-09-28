@@ -26,7 +26,7 @@ _더 많은 예제와 사용법은 [Resource Explorer][resource-explorer]를 참
 
 Windows 10 개발환경의 `CCS 9.3.0`에서 `build, compile`
 
-![](./images/ccs_general_setting.png)
+![](./images/ccs_general_setting.png?retina)
 
 Linker command file 및 Compiler version setting 방법
 
@@ -34,7 +34,7 @@ Processor에 맞춰 선택 (`General > Project > Tool-chain > Linker command fil
 
 사용하는 Compiler version 선택 (`General > Project > Tool-chain > Compiler version`)
 
-![](./images/ccs_build_setting.png)
+![](./images/ccs_build_setting.png?retina)
 
 Build command setting  방법
 
@@ -67,4 +67,4 @@ README Template by. sujinleeme
 [travis-image]: https://img.shields.io/travis/tlals96/f280045_DMA_ADC/master.svg?style=flat-square
 [travis-url]: https://app.travis-ci.com/github/tlals96/f280045_DMA_ADC
 [resource-explorer]: https://dev.ti.com/tirex/explore/node?compilers=ccs&devices=F280045&node=AL.a.macE.c7rSiGSB7klQ__gYkahfz__LATEST
-[general-setting]: https://https://img.shields.io/travis/tlals96/f280045_DMA_ADC/images/ccs_general_setting.png
+[general-setting]: https://https://img.shields.io/travis/tlals96/f280045_DMA_ADC/images/ccs_general_setting.png?retina
