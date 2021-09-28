@@ -66,6 +66,8 @@ Debug/
 Release/
 Flash/
 RAM/
+CPU1_FLASH/
+CPU1_RAM/
 # Generated build artifacts
 makefile
 *.mk
@@ -79,5 +81,7 @@ makefile
 .xdchelp
 # Uniflash session files
 *.uniflashsession
+# vscode
+.vscode/
 
 # End of https://www.toptal.com/developers/gitignore/api/codecomposerstudio,c
