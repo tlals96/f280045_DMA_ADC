@@ -12,7 +12,7 @@ Windows :
 [IDE][ccs9_3-download], 
 [Library][c2000ware-url]
 
-Compiled in CCS V9.3.0
+Compiled in CCS v9.3.0
 
 ## 사용 예제
 
