@@ -3,9 +3,9 @@
 
 [![Build Status][travis-image]][travis-url]
 
-Start ADC conversion based on EPWM2 trigger
+EPWM2 trigger를 기준으로 ADC conversion을 시작함
 
-Conversion of each of the 12 channels of `ADCA` and `ADCC`.
+`ADCA`, `ADCC`의 각 12개의 channel을 각각 conversion
 
 ## IDE, Library Install URL
 Windows : 
@@ -16,38 +16,35 @@ Compiler version : TI 20.2.1.LTS
 
 Compiled in CCS v9.3.0
 
-## Examples
+## 사용 예제
 
 Directory : ti\ .. \c2000\C2000Ware_3_04_00_00\driverlib\f28004x\examples\adc\adc_ex6_soc_continuous_dma.c
 
-ti\ .. \c2000\C2000Ware_3_04_00_00\driverlib\f28004x\examples\adc\CCS\adc_ex6_soc_continuous_dma.projectspec
+ti\ .. \c2000\C2000Ware_3_04_00_00\driverlib\f28004x\examples\adc\CCS\adc_ex6_soc_continuous_dma.projectspec를 CCS에서 Import해 사용
 
-Import project into CCS and use it
+_더 많은 예제와 사용법은 [Resource Explorer][resource-explorer]를 참고하세요._
 
-_Refer to [Resource Explorer][resource-explorer] for more examples and instructions_
+## 개발 환경 설정
 
-## Development environment setting
+Windows 10 개발환경의 `CCS 9.3.0`에서 `build, compile`
 
-`Build, composite` in `CCS 9.3.0` in Windows 10 development environment
-
-### How to set Linker command file, Compiler version
+### Linker command file 및 Compiler version setting 방법
 ![](./images/ccs_general_setting.png)
 
-Choose according to the processor (`General > Project > Tool-chain > Linker command file`)
+Processor에 맞춰 선택 (`General > Project > Tool-chain > Linker command file`)
 
-Select the compiler version you use (`General > Project > Tool-chain > Compiler version`)
+사용하는 Compiler version 선택 (`General > Project > Tool-chain > Compiler version`)
 
-### How to set the build command
+### Build command setting  방법
 ![](./images/ccs_build_setting.png)
 
-Write down the number of logical processors on the development PC (`Build > Builder > Build Command`)
-
+개발 PC CPU의 논리프로세서 개수 만큼 -j 뒤에 기입해주면 됨 `Build > Builder > Build Command`
 > ${CCS_UTILS_DIR}/bin/gmake -k `-j 12`
 
-## Update history
+## 업데이트 내역
 
 * 0.0.1
-    * Revise : Document update
+    * 수정: 문서 업데이트
 
 <!-- 
 ## 정보
